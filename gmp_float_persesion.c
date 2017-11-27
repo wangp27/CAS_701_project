@@ -4,7 +4,7 @@ int main (int argc, char** argv){
     mpf_t x,result,y,zero,temp;
     int i = 3;
     mpf_init(x);
-    mpf_init_set_d(zero,0);
+    mpf_init_set_str(zero,"0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009",10);
     mpf_init_set_d(y,10.0);
     mpf_init(result);
     mpf_set_d(x,10);
@@ -21,6 +21,6 @@ int main (int argc, char** argv){
         else
             break;
     }
-    gmp_printf("fixed point percesion computation err is %.100Ff\n",result);
+    gmp_printf("the computation  err is \n%.1000Ff\n",result);
 }
 

@@ -5,4 +5,4 @@ while(1):
         result = i
     else:
         break
-print("the computational err is %.100f\n" %result)
+print("the computational err is %.1000f\n" %result)
