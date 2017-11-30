@@ -1,5 +1,5 @@
 for cnt in range(0,1000000):
-    previous = 0
+    previous = 1
     current = 1
     next_val = current+previous
     while(1):

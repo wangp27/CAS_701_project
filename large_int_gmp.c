@@ -17,8 +17,6 @@ int main (int argc, char** argv) {
     mpz_init_set_str(y,"9263591128439081000000",10);
     mpz_init(result);
     mpz_mul(result,x,y);
-    gmp_printf("x is    %Zd\n\
-           y is     %Zd\n\
-           result is    %Zd\n",x,y,result);
+    gmp_printf("result is    %Zd\n",result);
 }
 

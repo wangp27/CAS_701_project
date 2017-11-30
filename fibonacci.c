@@ -5,7 +5,7 @@ int main(int argc, char** argv){
     volatile long int next, current, previous,result;
     for(cnt = 10000000;cnt>0;cnt--){
         current = 1;
-        previous = 0;
+        previous = 1;
         next = 0;
         while(1){
             next = current + previous;
